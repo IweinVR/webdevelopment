@@ -2,8 +2,8 @@
 
 section > header{
     background: url('../Afbeeldingen/header.jpg') no-repeat ;
-    background-size: auto;
     height: 100px;
+    background-size: cover;
 
 
 }
@@ -24,6 +24,8 @@ section > header > h1{
 }
 section > article > header > h1{
     margin: 5px;
+    padding-bottom: 10px;
+    padding-top: 40px;
 }
 
 article{
@@ -34,5 +36,11 @@ section > article > header > h1 {
     font-family: Helvetica, sans-serif;
     color: #444;
     font-size: 30px;
+}
+
+body{
+    width: 95%;
+    margin: 0 auto;
+    padding-top: 10px;
 }
 
