@@ -41,3 +41,89 @@ aside{
     box-sizing: border-box;
     margin-left: 0;
 }
+aside p{
+    color: #666666;
+    font-size: 90%;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+aside h3{
+    color: white;
+    background-color: blue;
+    font-size: 120%;
+    text-align: center;
+}
+main{
+    float: left;
+    position: relative;
+    width: 75%;
+    display: inline-block;
+    box-sizing: border-box;
+    margin-right:0;
+}
+picture{
+    position: relative;
+    float: left;
+    display: inline-block;
+    margin: 20px;
+    padding-bottom: 20px;
+    padding-top: 20px;
+}
+
+.pictures {
+    background-color: #999999;
+    margin: 0;
+    padding: 20px;
+}
+.foto img{
+    width: 180px;
+    height: 180px;
+}
+
+.foto{
+    display: inline-block;
+    padding: 10px;
+    margin: 10px;
+    border: dashed 1px #999999;
+    background-color: white;
+}
+
+section {
+    text-align: justify;
+    margin-right: 10px;
+    background-color: white;
+    color: black;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-right: 30px;
+}
+footer{
+    clear: both;
+    background-color: #666666;
+    color: white;
+    line-height: 2em;
+}
+footer a{
+    color: white;
+    text-decoration: underline white;
+}
+footer a:hover{
+    color: red;
+    text-decoration: underline red;
+}
+
+footer div{
+    margin-left: 120px;
+    display: inline-block;
+}
+
+footer div div{
+    margin-left: 120px;
+    display: inline-block;
+}
+copyright{
+    text-align: center;
+    color: black;
+    background-color: white;
+}
