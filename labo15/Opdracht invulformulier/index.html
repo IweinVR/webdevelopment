@@ -2,7 +2,7 @@
 <html lang="nl">
 <head>
     <meta charset="UTF-8">
-    <link rel="stylesheet" href="CSS/sytlesheet.css">
+
     <title>Opdracht invulformulier</title>
 </head>
 <body>
@@ -29,7 +29,63 @@
     <input type="radio" name=="Sex" value=”v" />
     Female <br>
 
+    <label for="name">Favorite movie:</label>
+    <input type="text" name="name"   />
+    <br/>
 
+    <label for="name">Favorite quote:</label>
+    <input type="text" name="name"  placeholder="Write your favorite qoute" />
+    <br/>
+
+    <label for="name">Password*:</label>
+    <input type="text" name="name" required="required"  />
+    <br/>
+    Favorite food
+
+    <select name="food" >
+        <option value="Hamburger">Hamburger </option>
+        <option value="Hotdag">Hotdag</option>
+        <option value="Chips">Chips</option>
+        <option value="Candy">Candy</option>
+        <option value="Apple">Apple</option>
+    </select>
+    <br/>
+
+    <label for="email">Email adress:</label>
+    <input type="email" name="email"
+           placeholder="Enter your email adress" />
+    <br/>
+
+    <label for="website">Favorite site:</label>
+    <input type="url" name="email"
+           placeholder="Enter the URL of your favorite site" />
+    <br/>
+
+
+    <label for=”number”>Favorite number between 1-10:</label>
+    <input type="number" name=”txtNumber” min=”0” max=”10”/>
+    <br/>
+
+    <label for=”number”>Favorite number between 11-1000:</label>
+    <input type="range" name=”txtRange” />
+    <br/>
+
+    <label for=”date”>When where you born?:</label>
+    <input type="date" name=”” />
+
+    <br/>
+    <label for="number">Belgium zip-code reg number*:</label>
+    <input type="number" name="number" required="required"
+           placeholder="9999" />
+    <br/>
+    <label for="name">Search for something:</label>
+    <input type="text" name="name"   />
+    <br/>
+
+    <form action="filename" method="post/get">
+
+        <input type="submit" name="knop" value="Submit" />
+    </form>
 
 </form>
 
