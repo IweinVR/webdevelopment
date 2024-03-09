@@ -2,11 +2,26 @@
 <html lang="nl">
 <head>
     <meta charset="UTF-8">
-    <link rel="stylesheet" href="styles/style.css">
     <title>Title</title>
 </head>
 <body>
 
-<script type="text/javascript" charset="utf-8" src="scripts/code.js"></script>
+<script type="text/javascript">
+    const maakMetSpaties = (inputText) => {
+        let result = "";
+        for (let i = 0; i < inputText.length; i++) {
+            result += inputText[i];
+            if (i !== inputText.length - 1) {
+                result += " ";
+            }
+        }
+        return result;
+    }
+
+    const tekst = "Ik ben Iwein";
+    const tekstMetSpaties = maakMetSpaties(tekst);
+    console.log(tekstMetSpaties);
+</script>
+
 </body>
 </html>

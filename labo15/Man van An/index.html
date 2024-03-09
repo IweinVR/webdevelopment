@@ -2,11 +2,25 @@
 <html lang="nl">
 <head>
     <meta charset="UTF-8">
-    <link rel="stylesheet" href="styles/style.css">
+
     <title>Title</title>
 </head>
 <body>
 
-<script type="text/javascript" charset="utf-8" src="scripts/code.js"></script>
+<script type="text/javascript">
+    const tekst = "De man van An geeft geen hand aan ambetante verwanten";
+    const zoektekst = /an/gi;
+
+
+    //met indexoff
+    const countMetIndexOf = (tekst.match(zoektekst) || []).length;
+    console.log(countMetIndexOf);
+
+
+    //met lastIndexOf
+    const countMetLastIndexOf = (tekst.match(zoektekst) || []).length;
+    console.log( countMetLastIndexOf);
+</script>
+
 </body>
 </html>
