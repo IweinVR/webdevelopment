@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="styles/style.css">
+    <title>&lt;Reviews&gt;</title>
+</head>
+<body>
+<header>
+    <p>&lt;Reviews&gt;</p>
+
+</header>
+<main>
+    <button id="knopReview" >Schrijf een nieuwe review </button>
+    <section>
+        <h1>Voeg een review toe</h1>
+        <label for="naam">Naam:</label>
+        <input type="text" id="naam" name="naam" required="required"  />
+        <br/>
+        <label for="email">E-mailadres:</label>
+        <input type="email" id="email" name="email" required="required" />
+        <br/>
+        <label for="titel">Titel:</label>
+        <input type="text" id="titel" name="titel" required="required"  />
+        <br/>
+        <label for="review">Review:</label>
+        <input type="text" id="review" name="review" maxlength="250">
+        <br/>
+        <label for="rating">Rating:</label>
+        <input type="number" id="rating" name="rating" min="1" max="5">
+        <p></p>
+        <button id="knopToevoegen" >Toevoegen</button>
+        <button id="KnopAnnuleren" >Annuleren</button>
+    </section>
+</main>
+<footer>
+    <button id="admin" >Administratorpgina </button>
+    <a href="https://example.com"> Restaurantpagina</a>
+    <a href="homepage/index.html"> persoonlijke pagina</a>
+</footer>
+
+<script type="text/javascript" charset="utf-8" src="scripts/code.js"></script>
+</body>
+</html>

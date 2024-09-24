@@ -1,0 +1,46 @@
+body {
+    font-family: 'Segoe UI', 'Tahoma', 'geneva', 'sans-serif';
+    font-size: 1.2em;
+
+}
+
+header{
+  background-image: url("../images/banner.png");
+    text-align: center;
+    background-size:cover;
+
+    color: #152591;
+    margin: 0;
+}
+header  p{
+    font-size:300%;
+    font-weight:bold;
+
+    margin-top: 0;
+}
+#knopReview {
+
+}
+section {
+
+    border: 1px dotted black;
+    padding: 1em 3em;
+
+}
+footer {
+        background-color: #152591;
+        text-align: center;
+        margin-top: 2em;
+}
+footer button{
+    font-weight: bold;
+    background-color: #152591;
+    color : white;
+
+
+}
+footer a {
+    color:white;
+    text-decoration: none;
+    margin-left:5em;
+}

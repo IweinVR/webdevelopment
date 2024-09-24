@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="styles/style.css">
+    <title>Title</title>
+</head>
+<body>
+<input type="text" id="textInput">
+<button onclick="displayText()">Toon Tekst</button>
+
+<script>
+    function displayText() {
+        var inputText = document.getElementById("textInput").value;
+        var characters = inputText.split("");
+        var spacedText = characters.join(" ");
+        console.log(spacedText);
+    }
+</script>
+</body>
+</html>

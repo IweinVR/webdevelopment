@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="a257466b-6d73-4d88-b1fb-e599aee3c7a2" name="Changes" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="CSS File" />
+        <option value="HTML File" />
+        <option value="JavaScript File" />
+      </list>
+    </option>
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="ProblemsViewState">
+    <option name="selectedTabId" value="CurrentFile" />
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 5
+}</component>
+  <component name="ProjectId" id="2Vw7YTdqR456WBBIeci4AztWKK0" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;DefaultHtmlFileTemplate&quot;: &quot;HTML File&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/Iwein/OneDrive/Documenten/GitHub/webdevelopment/labo16/Opdracht formvalidatie&quot;,
+    &quot;list.type.of.created.stylesheet&quot;: &quot;CSS&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;fileTemplates&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  }
+}</component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\Iwein\OneDrive\Documenten\GitHub\webdevelopment\labo16\Opdracht formvalidatie" />
+      <recent name="C:\Users\Iwein\OneDrive\Documenten\GitHub\webdevelopment\labo16\OpdrachtDeEnHet" />
+      <recent name="C:\Users\Iwein\OneDrive\Documenten\GitHub\webdevelopment\labo16\trigrams" />
+      <recent name="C:\Users\Iwein\OneDrive\Documenten\GitHub\webdevelopment\labo15\Opdracht invulformulier" />
+      <recent name="C:\Users\Iwein\OneDrive\Documenten\GitHub\webdevelopment\labo8" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\Iwein\OneDrive\Documenten\GitHub\webdevelopment\Examen" />
+      <recent name="C:\Users\Iwein\OneDrive\Documenten\GitHub\webdevelopment\Examen\Style" />
+      <recent name="C:\Users\Iwein\OneDrive\Documenten\GitHub\webdevelopment\Examen\Script" />
+      <recent name="C:\Users\Iwein\OneDrive\Documenten\GitHub\webdevelopment\Voorbeeld examen" />
+      <recent name="C:\Users\Iwein\OneDrive\Documenten\GitHub\webdevelopment\labo20" />
+    </key>
+  </component>
+  <component name="RunManager">
+    <configuration name="code.js" type="NodeJSConfigurationType" nameIsGenerated="true" path-to-js-file="code.js" working-dir="$PROJECT_DIR$/Examen/scripts">
+      <method v="2" />
+    </configuration>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="a257466b-6d73-4d88-b1fb-e599aee3c7a2" name="Changes" comment="" />
+      <created>1695735336828</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1695735336828</updated>
+      <workItem from="1695735337846" duration="1495000" />
+      <workItem from="1695739459784" duration="1595000" />
+      <workItem from="1696016074192" duration="6032000" />
+      <workItem from="1696341915642" duration="877000" />
+      <workItem from="1696666640232" duration="2638000" />
+      <workItem from="1696945281671" duration="4308000" />
+      <workItem from="1697107199117" duration="403000" />
+      <workItem from="1697256588609" duration="3410000" />
+      <workItem from="1697549523738" duration="468000" />
+      <workItem from="1697709261103" duration="2513000" />
+      <workItem from="1697802383149" duration="760000" />
+      <workItem from="1697880831291" duration="1991000" />
+      <workItem from="1698154568178" duration="4825000" />
+      <workItem from="1698482530916" duration="1221000" />
+      <workItem from="1699368200413" duration="4970000" />
+      <workItem from="1699434698017" duration="324000" />
+      <workItem from="1699526238253" duration="611000" />
+      <workItem from="1699697244039" duration="4471000" />
+      <workItem from="1699973441560" duration="2211000" />
+      <workItem from="1700150644634" duration="1547000" />
+      <workItem from="1700303745887" duration="1717000" />
+      <workItem from="1700578467328" duration="3857000" />
+      <workItem from="1701088801112" duration="5011000" />
+      <workItem from="1701163491953" duration="537000" />
+      <workItem from="1701183355276" duration="2749000" />
+      <workItem from="1701511114053" duration="2580000" />
+      <workItem from="1701787203538" duration="4994000" />
+      <workItem from="1701851087547" duration="511000" />
+      <workItem from="1702118725808" duration="1401000" />
+      <workItem from="1702396245231" duration="1243000" />
+      <workItem from="1702643120154" duration="966000" />
+      <workItem from="1702723405937" duration="1249000" />
+      <workItem from="1705941836870" duration="3136000" />
+      <workItem from="1708715349199" duration="2426000" />
+      <workItem from="1709041436981" duration="5734000" />
+      <workItem from="1709646383158" duration="6862000" />
+      <workItem from="1709980671612" duration="1877000" />
+      <workItem from="1710251779942" duration="7469000" />
+      <workItem from="1710793727429" duration="1299000" />
+      <workItem from="1710854290786" duration="4719000" />
+      <workItem from="1711189457920" duration="2141000" />
+      <workItem from="1711463993247" duration="4178000" />
+      <workItem from="1713271629149" duration="7538000" />
+      <workItem from="1713876383193" duration="7313000" />
+      <workItem from="1714479688046" duration="2338000" />
+      <workItem from="1714988014645" duration="1092000" />
+      <workItem from="1715083381984" duration="2156000" />
+      <workItem from="1715690469351" duration="4796000" />
+      <workItem from="1718108527302" duration="1214000" />
+      <workItem from="1718175225586" duration="5762000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+</project>
