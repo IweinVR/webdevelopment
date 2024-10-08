@@ -3,28 +3,52 @@
 <head>
     <meta charset="UTF-8">
     <title>Title</title>
+    <link rel="stylesheet" href="https://code.jquery.com/ui/1.14.0/themes/base/jquery-ui.css">
+    <link rel="stylesheet" href="/resources/demos/style.css">
+    <script src="https://code.jquery.com/jquery-3.7.1.js"></script>
+    <script src="https://code.jquery.com/ui/1.14.0/jquery-ui.js"></script>
+    <script>
+        $( function() {
+            $( "#accordion" ).accordion();
+        } );
+    </script>
 </head>
 <body>
-<h1>Opdracht 1</h1>
-<h2>Blokjes</h2>
-<p>In het schema van de DOM-tree kun je elk blokje vergelijken met een HTML-element in de HTML-code.
-    Met andere woorden elke keer dat je een HTML-tag zoals < div >, < p >, < h1 >, enzovoort tegenkomt,
-    kun je dat vergelijken met een blokje in de DOM-tree.</p>
-<h2>lijntjes</h2>
-<p>Die lijnen tussen de blokjes in de schematische weergave geven aan welke HTML-elementen ouder-kindrelaties hebben in de DOM-tree.
-    Als je in de HTML-code een element binnen een ander element plaatst ontstaat er zo een relatie en die lijnen  laten dat zien.</p>
 
-<h1>Opdracht 3</h1>
-<h2>Uit welke elementen bestaat elke accordion section in de DOM-tree? </h2>
-<p>header</p>
-<p>body</p>
-<p>footer</p>
-<h2>Welke wijzingen gebeuren er in de DOM-tree als je op een gesloten section klikt?</h2>
-<p>Er Komt tekts bij en er wordt tekst verwijderd.</p>
-<h2>dat er heel wat attributen aan de
-    oorspronkelijke elementen zijn toegevoegd. Hoe zou dit gebeurd zijn?</h2>
-<p>Door gebruik van de  library's kan je de code versimpelen. </p>
+<div id="accordion">
+    <h3>Opdracht 1</h3>
+    <div>
+        <h2>Blokjes</h2>
+        <p>In het schema van de DOM-tree kun je elk blokje vergelijken met een HTML-element in de HTML-code.
+            Met andere woorden elke keer dat je een HTML-tag zoals < div >, < p >, < h1 >, enzovoort tegenkomt,
+            kun je dat vergelijken met een blokje in de DOM-tree.</p>
+        <h2>lijntjes</h2>
+        <p>Die lijnen tussen de blokjes in de schematische weergave geven aan welke HTML-elementen ouder-kindrelaties hebben in de DOM-tree.
+            Als je in de HTML-code een element binnen een ander element plaatst ontstaat er zo een relatie en die lijnen  laten dat zien.</p>
+
+    </div>
+    <h3>Opdracht 2</h3>
+    <div>
+        <p>
+            Heb ik gedaan.
+        </p>
+    </div>
+    <h3>Opdracht 3</h3>
+    <div>
+        <h2>Uit welke elementen bestaat elke accordion section in de DOM-tree? </h2>
+        <p>header</p>
+        <p>body</p>
+        <p>footer</p>
+        <h2>Welke wijzingen gebeuren er in de DOM-tree als je op een gesloten section klikt?</h2>
+        <p>Er Komt tekts bij en er wordt tekst verwijderd.</p>
+        <h2>dat er heel wat attributen aan de
+            oorspronkelijke elementen zijn toegevoegd. Hoe zou dit gebeurd zijn?</h2>
+        <p>Door gebruik van de library's kan je de code versimpelen. </p>
+    </div>
+
+</div>
 
 
-</body>
-</html>
+
+
+</body></html>
