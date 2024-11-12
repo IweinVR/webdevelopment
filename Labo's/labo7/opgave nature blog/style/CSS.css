@@ -1,0 +1,39 @@
+body{
+    margin: 0 auto;
+    width: 80%;
+    padding-top: 1px;
+}
+section>header{
+    background-image: url('../Afbeeldingen/header.jpg');
+    background-size: cover;
+    height: 100px;
+}
+
+section>header>h1{
+    color: white;
+    font-family: Helvetica, sans-serif;
+    font-size: 45px;
+    margin-top: 10px;
+}
+nav>a{
+    text-decoration: none;
+    color: #56FF88;
+    font-family: Helvetica, sans-serif;
+
+}
+nav {
+    background-color: #444;
+    color: black;
+    padding: 5px;
+}
+article{
+    background-color: #e1e2e6;
+}
+section>article>header>h1{
+    text-decoration-line: underline;
+    color: #444;
+    font-size: 1.8em;
+    padding-top: 50px;
+    font-family: Helvetica, sans-serif;
+    margin-top: 10px;
+}
