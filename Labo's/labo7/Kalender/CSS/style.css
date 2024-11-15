@@ -1,0 +1,47 @@
+body {
+    font-family: Arial, sans-serif;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+th, td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: center;
+}
+
+th {
+    background-color: rgb(170, 170, 200);
+    color: rgb(200, 190, 240);
+}
+
+td:first-child, td:last-child {
+    color: #888;
+}
+
+td:not(:empty):hover {
+    background-color: #f0f0f0;
+}
+
+td:empty {
+    background-color: #eee;
+}
+
+td:nth-child(1) {
+    background-color: cyan;
+}
+
+td:nth-child(7) {
+    background-color: cyan;
+}
+
+td.vrije-dag {
+    background-color: rgb(250, 120, 120);
+}
+td.vrije-dag {
+    background-color: rgb(250, 120, 120);
+}
