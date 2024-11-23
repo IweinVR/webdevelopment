@@ -1,0 +1,23 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+.column {
+    width: 50%;
+    border: 1px solid #ccc;
+    padding: 10px;
+    float: left;
+}
+
+.column h2 {
+    margin-top: 0;
+}
+
+.clear {
+    clear: both;
+}
