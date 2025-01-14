@@ -1,89 +1,104 @@
-body{
-    background-color: slategray;
-    width: 95%;
-    margin: 0 auto;
-
-}
-h1{
-    font-size: 5em;
-    color: lightgreen;
-    background-image: url('../Images/Spotify_icon.svg.png');
-    background-repeat: no-repeat;
-    background-size: 80px 80px;
-    padding-left: 100px;
-}
-nav{
-    text-align: center;
-}
-header{
-    padding: 20px;
-}
-section,aside{
-    background-color: lightslategrey;
-    border: 3px solid palegreen;
-
+body {
+    background-color: slategray; /* Stelt de achtergrondkleur van de body in op slategray. */
+    width: 95%; /* Stelt de breedte van de body in op 95% van het viewport. */
+    margin: 0 auto; /* Centreert de body horizontaal. */
 }
 
-h2{
-    color: lightgreen;
-}
-table, th, td{
-    border: 3px solid white;
-    border-collapse: collapse;
-
-}
-th, td{
-    padding: 10px;
-}
-th{
-    background-color: lightgreen;
-}
-table{
-    margin:  20px;
-}
-tbody tr:nth-of-type(3) td:last-of-type{
-    background-color: lightgreen;
-}
-.links{
-    float: left;
-    width: 75%;
-    box-sizing: border-box;
-    padding-right: 10px;
-}
-aside{
-    float: right;
-    width: 25%;
-    box-sizing: border-box;
-}
-a{
-    color: lightgreen;
-}
-a:visited{
-    color: lightgreen;
+h1 {
+    font-size: 5em; /* Stelt de lettergrootte van h1-kopteksten in op 5 em. */
+    color: lightgreen; /* Verandert de kleur van de tekst in lightgreen. */
+    background-image: url('../Images/Spotify_icon.svg.png'); /* Voegt een achtergrondafbeelding toe. */
+    background-repeat: no-repeat; /* Voorkomt dat de achtergrondafbeelding zich herhaalt. */
+    background-size: 80px 80px; /* Geeft de achtergrondafbeelding een vaste grootte van 80x80 pixels. */
+    padding-left: 100px; /* Voegt ruimte toe aan de linkerkant van de tekst, zodat de afbeelding zichtbaar blijft. */
 }
 
-.topliedjes{
-    padding: 10px;
+nav {
+    text-align: center; /* Centreert de inhoud van het navigatie-element horizontaal. */
 }
-aside{
-    padding-bottom: 933px;
+
+header {
+    padding: 20px; /* Voegt binnenruimte (padding) van 20px toe aan het header-element. */
 }
-nav{
-    border: 3px solid lightgreen;
-    padding: 20px;
-    margin-bottom: 30px;
-    display: block;
-    font-size: 2em;
+
+section, aside {
+    background-color: lightslategrey; /* Stelt de achtergrondkleur van deze elementen in op lightslategrey. */
+    border: 3px solid palegreen; /* Voegt een border van 3px met de kleur palegreen toe. */
 }
-nav a{
-    background-color: grey;
-    color: white;
-    margin-left: 40px;
+
+h2 {
+    color: lightgreen; /* Verandert de kleur van h2-kopteksten naar lightgreen. */
 }
-nav a:visited{
-    color: white;
+
+table, th, td {
+    border: 3px solid white; /* Geeft tabellen, kopcellen en cellen een witte rand van 3px. */
+    border-collapse: collapse; /* Zorgt ervoor dat de randen van de tabel samenvallen in plaats van dubbel te verschijnen. */
 }
-footer{
-    clear: both;
-    text-align: center;
+
+th, td {
+    padding: 10px; /* Voegt 10px padding toe aan tabelcellen en kopcellen. */
+}
+
+th {
+    background-color: lightgreen; /* Geeft kopcellen een achtergrondkleur van lightgreen. */
+}
+
+table {
+    margin: 20px; /* Voegt een marge van 20px rondom de tabel toe. */
+}
+
+tbody tr:nth-of-type(3) td:last-of-type {
+    background-color: lightgreen; /* Geeft de laatste cel van de derde rij in de tabelbody een achtergrondkleur van lightgreen. */
+}
+
+.links {
+    float: left; /* Zorgt ervoor dat dit element links uitlijnt. */
+    width: 75%; /* Stelt de breedte in op 75% van de oudercontainer. */
+    box-sizing: border-box; /* Inclusief padding en borders bij het berekenen van de breedte. */
+    padding-right: 10px; /* Voegt 10px ruimte toe aan de rechterkant. */
+}
+
+aside {
+    float: right; /* Zorgt ervoor dat dit element rechts uitlijnt. */
+    width: 25%; /* Stelt de breedte in op 25% van de oudercontainer. */
+    box-sizing: border-box; /* Inclusief padding en borders bij het berekenen van de breedte. */
+}
+
+a {
+    color: lightgreen; /* Stelt de tekstkleur van links in op lightgreen. */
+}
+
+a:visited {
+    color: lightgreen; /* Zorgt ervoor dat bezochte links dezelfde kleur hebben als niet-bezochte links. */
+}
+
+.topliedjes {
+    padding: 10px; /* Voegt 10px padding toe aan dit element. */
+}
+
+aside {
+    padding-bottom: 933px; /* Voegt een specifieke onderkantpadding toe, vermoedelijk om het aside-element een bepaalde hoogte te geven. */
+}
+
+nav {
+    border: 3px solid lightgreen; /* Geeft het navigatie-element een rand van 3px in de kleur lightgreen. */
+    padding: 20px; /* Voegt binnenruimte van 20px toe aan het navigatie-element. */
+    margin-bottom: 30px; /* Voegt 30px ruimte onder het navigatie-element toe. */
+    display: block; /* Zorgt ervoor dat nav als een blokniveau-element wordt weergegeven. */
+    font-size: 2em; /* Vergroot de tekstgrootte in het navigatie-element. */
+}
+
+nav a {
+    background-color: grey; /* Geeft navigatielinks een grijze achtergrondkleur. */
+    color: white; /* Verandert de tekstkleur van navigatielinks naar wit. */
+    margin-left: 40px; /* Voegt 40px marge toe aan de linkerkant van elke link. */
+}
+
+nav a:visited {
+    color: white; /* Zorgt ervoor dat bezochte navigatielinks dezelfde kleur hebben als niet-bezochte links. */
+}
+
+footer {
+    clear: both; /* Zorgt ervoor dat het footer-element onder alle zwevende elementen wordt geplaatst. */
+    text-align: center; /* Centreert de inhoud van het footer-element. */
 }

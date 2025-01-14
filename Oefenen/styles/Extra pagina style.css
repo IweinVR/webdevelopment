@@ -1,144 +1,152 @@
 body{
-    background-color: slategray;
-    width: 95%;
-    margin: 0 auto;
-
+    background-color: slategray; /* De achtergrondkleur van de pagina wordt slategray (blauwgrijs). */
+    width: 95%; /* De breedte van de body is 95% van de breedte van het scherm. */
+    margin: 0 auto; /* De body wordt horizontaal gecentreerd met geen marge boven of onder. */
 }
+
 header{
-    background-repeat: no-repeat;
-    background-image: url("../Images/HeaderSpotify.png");
-    background-position: center;
-    padding-bottom: 100px;
-    height: 100px;
-    background-size: cover;
+    background-repeat: no-repeat; /* De achtergrondafbeelding wordt niet herhaald. */
+    background-image: url("../Images/HeaderSpotify.png"); /* De header heeft een achtergrondafbeelding van het bestand HeaderSpotify.png. */
+    background-position: center; /* De achtergrondafbeelding wordt in het midden van de header geplaatst. */
+    padding-bottom: 100px; /* Er wordt 100px padding aan de onderkant van de header toegevoegd. */
+    height: 100px; /* De hoogte van de header is 100px. */
+    background-size: cover; /* De achtergrondafbeelding bedekt de gehele header, ongeacht de grootte. */
 }
-
 
 h1{
-    font-size: 3em;
-
+    font-size: 3em; /* Het font van de h1 (koptekst 1) is 3 keer groter dan de standaardgrootte. */
 }
-section,aside{
-    background-color: lightslategrey;
-    border: 3px solid palegreen;
 
+section, aside{
+    background-color: lightslategrey; /* De achtergrondkleur van zowel section als aside wordt lightslategrey (lichtblauwgrijs). */
+    border: 3px solid palegreen; /* Er wordt een rand van 3px in palegreen (lichtgroen) toegevoegd. */
 }
 
 h2{
-    color: lightgreen;
+    color: lightgreen; /* De tekstkleur van h2 (koptekst 2) is lichtgroen. */
 }
-.container{
-    display: grid;
-    grid-template-columns: repeat(3,auto);
-    grid-template-rows: repeat(1,auto);
-    gap: 10px 10px;
-    margin-top: 10px;
-}
-.container .block{
-    padding:20px;
-    color: black;
-    font-size: 1em;
-    font-weight:bold;
-    text-align:center;
-}
-.block.block2{
-    grid-column-start: 1;
-    grid-column-end: 2;
-    grid-row-start: 1;
-    grid-row-end: 2;
-}
-.block.block3{
-    grid-column-start: 2;
-    grid-column-end: 3;
-    grid-row-start: 1;
-    grid-row-end: 2;
-}
-.block.block1{
-    grid-column-start: 3;
-    grid-column-end: 4;
-    grid-row-start: 1;
-    grid-row-end: 2;
-}
-.overmij img{
-    width: 80px;
-    height: 80px;
 
+.container{
+    display: grid; /* De container gebruikt een grid-systeem om de indeling te bepalen. */
+    grid-template-columns: repeat(3, auto); /* Er worden drie kolommen aangemaakt die automatisch worden aangepast aan de inhoud. */
+    grid-template-rows: repeat(1, auto); /* Er wordt één rij gecreëerd, die automatisch de hoogte van de inhoud aanneemt. */
+    gap: 10px 10px; /* Er wordt een ruimte van 10px tussen de grid-items toegevoegd (horizontaal en verticaal). */
+    margin-top: 10px; /* Er wordt 10px marge boven de container toegevoegd. */
+}
+
+.container .block{
+    padding: 20px; /* Er wordt 20px padding rondom de block-elementen toegevoegd. */
+    color: black; /* De tekstkleur van de blocks is zwart. */
+    font-size: 1em; /* De tekstgrootte van de blocks is de standaardgrootte. */
+    font-weight: bold; /* De tekst in de blocks wordt vetgedrukt. */
+    text-align: center; /* De tekst wordt gecentreerd binnen de blocks. */
+}
+
+.block.block2{
+    grid-column-start: 1; /* Het block begint in de eerste kolom. */
+    grid-column-end: 2; /* Het block eindigt in de tweede kolom. */
+    grid-row-start: 1; /* Het block begint in de eerste rij. */
+    grid-row-end: 2; /* Het block eindigt in de tweede rij. */
+}
+
+.block.block3{
+    grid-column-start: 2; /* Het block begint in de tweede kolom. */
+    grid-column-end: 3; /* Het block eindigt in de derde kolom. */
+    grid-row-start: 1; /* Het block begint in de eerste rij. */
+    grid-row-end: 2; /* Het block eindigt in de tweede rij. */
+}
+
+.block.block1{
+    grid-column-start: 3; /* Het block begint in de derde kolom. */
+    grid-column-end: 4; /* Het block eindigt in de vierde kolom (deze kolom is buiten de set van drie, dus het block blijft in de derde kolom). */
+    grid-row-start: 1; /* Het block begint in de eerste rij. */
+    grid-row-end: 2; /* Het block eindigt in de tweede rij. */
+}
+
+.overmij img{
+    width: 80px; /* De breedte van de afbeeldingen in het .overmij-element is 80px. */
+    height: 80px; /* De hoogte van de afbeeldingen in het .overmij-element is 80px. */
 }
 
 .overmij{
-    display: flex;
-    flex-direction: column;
-
-    padding: 10px;
-    width: 50%;
-    align-items: center;
-    margin: 0 auto;
-    border: 0 solid black;
+    display: flex; /* Het .overmij-element maakt gebruik van flexbox voor de indeling. */
+    flex-direction: column; /* De flex-items binnen .overmij worden verticaal gestapeld. */
+    padding: 10px; /* Er wordt 10px padding rondom het .overmij-element toegevoegd. */
+    width: 50%; /* Het .overmij-element heeft een breedte van 50% van de container. */
+    align-items: center; /* De items binnen .overmij worden gecentreerd langs de horizontale as. */
+    margin: 0 auto; /* Het .overmij-element wordt horizontaal gecentreerd met geen marge boven of onder. */
+    border: 0 solid black; /* Er wordt een zwarte rand van 0px breed toegevoegd (geen zichtbare rand). */
 }
+
 nav{
-    border: 3px solid lightgreen;
-    padding: 20px;
-    margin-bottom: 30px;
-    display: block;
-    font-size: 2em;
+    border: 3px solid lightgreen; /* De navigatie krijgt een rand van 3px in lichtgroen. */
+    padding: 20px; /* Er wordt 20px padding rondom de navigatie toegevoegd. */
+    margin-bottom: 30px; /* De navigatie krijgt een marge van 30px aan de onderkant. */
+    display: block; /* De navigatie wordt als een block-element weergegeven. */
+    font-size: 2em; /* De lettergrootte van de navigatie is 2 keer de standaardgrootte. */
 }
 
 nav a{
-    background-color: grey;
-    color: white;
-    margin-left: 40px;
+    background-color: grey; /* De achtergrondkleur van de links in de navigatie is grijs. */
+    color: white; /* De tekstkleur van de links in de navigatie is wit. */
+    margin-left: 40px; /* Er wordt 40px marge aan de linkerkant van de navigatielinks toegevoegd. */
 }
+
 nav a:visited{
-    color: white;
+    color: white; /* De kleur van bezochte navigatielinks blijft wit. */
 }
 
 .nav_container{
-    display: grid;
-    grid-template-columns: repeat(2,auto);
-    grid-template-rows: repeat(1,auto);
-    gap: 10px 10px;
-    margin-top: 10px;
+    display: grid; /* De nav_container gebruikt een grid-systeem voor de indeling van de navigatie. */
+    grid-template-columns: repeat(2, auto); /* Er worden twee kolommen gemaakt, die automatisch worden aangepast aan de inhoud. */
+    grid-template-rows: repeat(1, auto); /* Er wordt één rij gecreëerd. */
+    gap: 10px 10px; /* Er wordt een ruimte van 10px tussen de grid-items toegevoegd (horizontaal en verticaal). */
+    margin-top: 10px; /* Er wordt 10px marge boven de nav_container toegevoegd. */
 }
+
 .nav_container .blocknav{
-    padding:20px;
-    color: black;
-    font-size: 1em;
-    font-weight:bold;
-    text-align:center;
+    padding: 20px; /* Er wordt 20px padding rondom de blocknav-elementen toegevoegd. */
+    color: black; /* De tekstkleur van de blocknav-elementen is zwart. */
+    font-size: 1em; /* De tekstgrootte van de blocknav-elementen is de standaardgrootte. */
+    font-weight: bold; /* De tekst in de blocknav-elementen is vetgedrukt. */
+    text-align: center; /* De tekst wordt gecentreerd binnen de blocknav-elementen. */
 }
+
 .blocknav.blocknav1{
-    grid-column-start: 1;
-    grid-column-end: 2;
-    grid-row-start: 1;
-    grid-row-end: 2;
+    grid-column-start: 1; /* Het blocknav-element begint in de eerste kolom. */
+    grid-column-end: 2; /* Het blocknav-element eindigt in de tweede kolom. */
+    grid-row-start: 1; /* Het blocknav-element begint in de eerste rij. */
+    grid-row-end: 2; /* Het blocknav-element eindigt in de tweede rij. */
 }
+
 .blocknav.blocknav2{
-    grid-column-start: 2;
-    grid-column-end: 3;
-    grid-row-start: 1;
-    grid-row-end: 2;
+    grid-column-start: 2; /* Het blocknav-element begint in de tweede kolom. */
+    grid-column-end: 3; /* Het blocknav-element eindigt in de derde kolom. */
+    grid-row-start: 1; /* Het blocknav-element begint in de eerste rij. */
+    grid-row-end: 2; /* Het blocknav-element eindigt in de tweede rij. */
 }
+
 @media screen and (min-width: 1020px){
     .container{
-        grid-template-columns: auto;
-        grid-template-rows: repeat(3,auto);
+        grid-template-columns: auto; /* Op grotere schermen (min-width 1020px) wordt de container heringedeeld naar één kolom. */
+        grid-template-rows: repeat(3, auto); /* Er worden drie rijen gecreëerd in plaats van één. */
     }
     .block.block2{
-        grid-column-start: 1;
-        grid-column-end: 2;
-        grid-row-start: 1;
-        grid-row-end: 2;
+        grid-column-start: 1; /* Het block2 wordt in de eerste kolom geplaatst. */
+        grid-column-end: 2; /* Het block2 eindigt in de tweede kolom. */
+        grid-row-start: 1; /* Het block2 begint in de eerste rij. */
+        grid-row-end: 2; /* Het block2 eindigt in de tweede rij. */
     }
     .block.block3{
-        grid-column-start: 1;
-        grid-column-end: 2;
-        grid-row-start: 2;
-        grid-row-end: 3;
+        grid-column-start: 1; /* Het block3 wordt in de eerste kolom geplaatst. */
+        grid-column-end: 2; /* Het block3 eindigt in de tweede kolom. */
+        grid-row-start: 2; /* Het block3 begint in de tweede rij. */
+        grid-row-end: 3; /* Het block3 eindigt in de derde rij. */
     }
     .block.block1{
-        grid-column-start: 1;
-        grid-column-end: 2;
-        grid-row-start: 3;
-        grid-row-end: 4;
+        grid-column-start: 1; /* Het block1 wordt in de eerste kolom geplaatst. */
+        grid-column-end: 2; /* Het block1 eindigt in de tweede kolom. */
+        grid-row-start: 3; /* Het block1 begint in de derde rij. */
+        grid-row-end: 4; /* Het block1 eindigt in de vierde rij. */
     }
 }
