@@ -1,0 +1,218 @@
+
+
+---
+
+
+
+### **1. Algemene CSS reset**
+Dit verwijdert de standaard marges en paddings van alle elementen en zorgt voor consistentie over verschillende browsers:
+```css
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; /* Zorgt ervoor dat padding en border binnen de breedte en hoogte vallen */
+}
+```
+
+---
+
+### **2. Font en typografie**
+Gebruik een standaard lettertype en zorg voor fallback-opties:
+```css
+body {
+    font-family: Helvetica, sans-serif;
+}
+```
+
+#### **Styling voor koppen:**
+- H1 krijgt een uppercase transform, een zwarte onderlijn, en padding/margin aangepast aan de font-size:
+```css
+h1 {
+    text-transform: uppercase;
+    font-size: 2.5em;
+    color: black;
+    border-bottom: 2px solid black;
+    padding-bottom: 2.5em; /* 100% van de font-size */
+    margin-bottom: 2.5em;
+}
+```
+
+- H2 is 1.5 keer de font-size van de parent en heeft een marge eronder:
+```css
+h2 {
+    font-size: 150%; /* Relatief aan de parent */
+    margin-bottom: 1.5em;
+}
+```
+
+---
+
+### **3. Flexibele layouts**
+Gebruik media queries om elementen responsief te maken:
+```css
+@media (max-width: 600px) {
+    header {
+        width: 600px;
+        margin: 0 auto; /* Centreert het blok */
+    }
+}
+
+@media (min-width: 770px) and (max-width: 999px) {
+    header {
+        width: 750px;
+        margin: 0 auto;
+    }
+}
+
+@media (min-width: 1000px) {
+    header {
+        width: 980px;
+        margin: 0 auto;
+    }
+}
+```
+
+---
+
+### **4. Grid en flexbox voor layout**
+Gebruik CSS Grid of Flexbox voor het organiseren van de pagina:
+#### **CSS Grid voor navigatie of afbeeldingen:**
+```css
+nav {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr); /* Verdeel in 7 gelijke delen */
+    gap: 10px;
+    padding: 10px 0;
+}
+```
+
+#### **Flexbox voor centering of aligning:**
+```css
+.header-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 500px; /* Gelijk aan de hoogte van de afbeelding */
+}
+```
+
+---
+
+### **5. Afbeeldingen responsief maken**
+Alle afbeeldingen krijgen een standaard stijl met een `.respimg` class:
+```css
+.respimg {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+```
+
+---
+
+### **6. Navigatie styling**
+Gebruik een lijst om een navigatiebalk te maken en voeg padding toe:
+```css
+nav a {
+    text-transform: uppercase;
+    text-decoration: none;
+    color: #5b4746;
+    font-size: 13px;
+    padding: 10px;
+    border-right: 1px solid #ebe8e8; /* Grijze lijn tussen items */
+}
+
+nav a:last-child {
+    border-right: none; /* Geen lijn bij het laatste item */
+}
+
+nav a:hover {
+    border-bottom: 2px solid #fff100; /* Gele lijn bij hover */
+}
+```
+
+---
+
+### **7. Artikel of recepten layout**
+Gebruik Grid en marges voor een nette presentatie:
+```css
+.recipes {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 15px; /* Ruimte tussen artikelen */
+    margin-top: 50px;
+}
+
+.recipe-item {
+    border-top: 1px solid #ddd; /* Grijze lijn boven */
+    padding-top: 1.5em; /* Relatief aan font-size */
+    margin-right: 1.5em;
+}
+```
+
+---
+
+### **8. Footer styling**
+De footer wordt in twee blokken verdeeld en gecentreerd:
+```css
+footer {
+    display: flex;
+    justify-content: space-between;
+    border-top: 1px solid #ebe8e8;
+    padding: 20px;
+}
+
+footer div {
+    width: 50%; /* Elk blok neemt de helft van de ruimte */
+    text-align: center;
+}
+```
+
+---
+
+### **Belangrijke structuur in HTML**
+Zorg ervoor dat de HTML semantisch is:
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kitchn</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="bootstrap-grid.css">
+</head>
+<body>
+    <header>
+        <img src="logo.png" alt="Kitchn Logo" class="logo">
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Recipes</a></li>
+                <!-- Meer menu items -->
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section class="recipes">
+            <article class="recipe-item">
+                <img src="recipe.jpg" alt="Recipe Image" class="respimg">
+                <h3 class="kicker">Kitchn Love Letters</h3>
+                <h2><a href="#">This One‐Pan Mushroom and Steak Recipe</a></h2>
+                <p>Raise your hand if you're making this for dinner tonight!</p>
+                <footer>
+                    <span class="author">by John Doe</span>
+                    <span class="timestamp">Jan 1, 2025</span>
+                </footer>
+            </article>
+        </section>
+    </main>
+    <footer>
+        <div>© 2025 Kitchn</div>
+        <div>Contact us</div>
+    </footer>
+</body>
+</html>
+```
+
+Met deze samenvatting en voorbeeldcodes kan je snel een vergelijkbare layout bouwen tijdens een examen!

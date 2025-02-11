@@ -128,11 +128,11 @@ const controleerOpOvereenkomst = (kaarten) => {
         }
     }
 	if (allenGelijk) {
-		// zelfde afbeeldingen, dus match
+		// zelfde images, dus match
 		window.setTimeout(verwijderKaartenMetVoorkant, 1000);
 		window.setTimeout(toonGoed, 500);
 	} else {
-		// andere afbeeldingen, dus mismatch
+		// andere images, dus mismatch
 		window.setTimeout(draaiKaartenMetVoorkantNaarAchterkant, 1000);
 		window.setTimeout(toonFout, 500);
 	}

@@ -1,0 +1,104 @@
+body{
+    background-color: slategray; /* De achtergrondkleur van de pagina wordt slategray (blauwgrijs). */
+    width: 95%; /* De breedte van de body is 95% van de breedte van het scherm. */
+    margin: 0 auto; /* Er wordt geen marge boven of onder de body toegevoegd, maar de body wordt horizontaal gecentreerd. */
+}
+
+h1{
+    font-size: 5em; /* Het font van de h1 (koptekst 1) is 5 keer groter dan de standaardgrootte. */
+    color: lightgreen; /* De tekstkleur van de h1 is lichtgroen. */
+    background-image: url('../Images/Spotify_icon.svg.png'); /* Een afbeelding van het Spotify-logo wordt als achtergrond ingesteld. */
+    background-repeat: no-repeat; /* De achtergrondafbeelding wordt niet herhaald. */
+    background-size: 80px 80px; /* De grootte van de achtergrondafbeelding wordt ingesteld op 80px breed en 80px hoog. */
+    padding-left: 100px; /* Er wordt 100px ruimte aan de linkerkant van de h1 toegevoegd. */
+}
+
+nav{
+    text-align: center; /* De inhoud van de navigatie wordt gecentreerd. */
+}
+
+header{
+    padding: 20px; /* Er wordt 20px padding (binnenruimte) toegevoegd rondom de header. */
+}
+
+section, aside{
+    background-color: lightslategrey; /* De achtergrondkleur van zowel de section als aside wordt lightslategrey (lichtblauwgrijs). */
+    border: 3px solid palegreen; /* Een rand van 3px in palegreen (lichtgroen) wordt toegevoegd aan zowel section als aside. */
+}
+
+h2{
+    color: lightgreen; /* De tekstkleur van de h2 (koptekst 2) is lichtgroen. */
+}
+
+table, th, td{
+    border: 3px solid white; /* Een witte rand van 3px wordt toegevoegd aan de tabel, de kopcellen (th) en de gegevenscellen (td). */
+    border-collapse: collapse; /* De randen van de tabel worden samengevoegd (geen dubbele randen). */
+}
+
+th, td{
+    padding: 10px; /* Er wordt 10px padding toegevoegd aan de cellen (th en td). */
+}
+
+th{
+    background-color: lightgreen; /* De achtergrondkleur van de kopcellen (th) is lichtgroen. */
+}
+
+table{
+    margin:  20px; /* De tabel krijgt een marge van 20px rondom. */
+}
+
+tbody tr:nth-of-type(3) td:last-of-type{
+    background-color: lightgreen; /* De laatste cel (td) van de derde rij (tr) in het lichaam van de tabel krijgt een lichtgroene achtergrondkleur. */
+}
+
+.links{
+    float: left; /* Het element .links wordt naar links uitgelijnd. */
+    width: 75%; /* Het element .links krijgt een breedte van 75% van de container. */
+    box-sizing: border-box; /* De breedte van het element wordt inclusief padding en rand berekend. */
+    padding-right: 10px; /* Er wordt 10px ruimte aan de rechterkant van het element toegevoegd. */
+}
+
+aside{
+    float: right; /* Het element aside wordt naar rechts uitgelijnd. */
+    width: 25%; /* Het element aside krijgt een breedte van 25% van de container. */
+    box-sizing: border-box; /* De breedte van het element wordt inclusief padding en rand berekend. */
+}
+
+a{
+    color: lightgreen; /* De kleur van links (a) is lichtgroen. */
+}
+
+a:visited{
+    color: lightgreen; /* De kleur van bezochte links blijft lichtgroen. */
+}
+
+.topliedjes{
+    padding: 10px; /* Er wordt 10px padding rondom het element .topliedjes toegevoegd. */
+}
+
+aside{
+    padding-bottom: 933px; /* Er wordt 933px padding onderaan het element aside toegevoegd, wat waarschijnlijk voor veel ruimte onder de inhoud zorgt. */
+}
+
+nav{
+    border: 3px solid lightgreen; /* De navigatie (nav) krijgt een rand van 3px in lichtgroen. */
+    padding: 20px; /* Er wordt 20px padding rondom de navigatie toegevoegd. */
+    margin-bottom: 30px; /* De navigatie krijgt een marge van 30px aan de onderkant. */
+    display: block; /* De navigatie wordt als een block-element weergegeven. */
+    font-size: 2em; /* De lettergrootte van de navigatie wordt ingesteld op 2 keer de standaard grootte. */
+}
+
+nav a{
+    background-color: grey; /* De achtergrondkleur van de links in de navigatie is grijs. */
+    color: white; /* De tekstkleur van de links in de navigatie is wit. */
+    margin-left: 40px; /* Er wordt 40px marge aan de linkerkant van de links in de navigatie toegevoegd. */
+}
+
+nav a:visited{
+    color: white; /* De kleur van bezochte navigatielinks blijft wit. */
+}
+
+footer{
+    clear: both; /* Alle elementen voor de footer worden van beide zijden (links en rechts) gewist, zodat de footer onder alle voorgaande elementen komt. */
+    text-align: center; /* De inhoud van de footer wordt gecentreerd. */
+}

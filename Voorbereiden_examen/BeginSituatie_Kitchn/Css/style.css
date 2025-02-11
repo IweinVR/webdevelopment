@@ -1,0 +1,438 @@
+* {
+    margin: 0; /* Verwijdert de standaard marge van alle elementen */
+    padding: 0; /* Verwijdert de standaard padding van alle elementen */
+}
+
+.respimg {
+    width: 100%; /* Zorgt ervoor dat de afbeelding de volledige breedte van de container in beslag neemt */
+    height: auto; /* Houdt de hoogte van de afbeelding in verhouding tot de breedte */
+    display: block; /* Zorgt ervoor dat de afbeelding als een blok wordt weergegeven, waardoor er geen ongewenste ruimte onder de afbeelding is */
+}
+
+body {
+    font-family: Helvetica, sans-serif; /* Stelt het lettertype in op Helvetica of een sans-serif alternatief */
+}
+
+/* Het H1 element moet standaard uppercase getoond worden met font‐size 2.5 em. Voeg een
+onderste volle zwarte lijn toe van 2px en gebruik een zwarte tekst kleur. De onderste
+padding en onderste margin geef je 100% van de font‐size van de parent. */
+h1 {
+    text-transform: uppercase; /* Zet de tekst in hoofdletters */
+    font-size: 2.5em; /* Stelt de lettergrootte in op 2.5 keer de grootte van de parent */
+    color: black; /* Stelt de tekstkleur in op zwart */
+    border-bottom: 2px solid black; /* Voegt een onderrand toe van 2px in zwart */
+    padding-bottom: 2.5em; /* Voegt onderaan padding toe gelijk aan 2.5 keer de font-grootte van de parent */
+    margin-bottom: 2.5em; /* Voegt onderaan marge toe gelijk aan 2.5 keer de font-grootte van de parent */
+}
+
+/* Het H2 element moet standaard met font‐size 150% van zijn parent getoond worden en
+heeft een onderste margin die even groot is als de font‐size van zijn parent. */
+h2 {
+    font-size: 150%; /* Stelt de lettergrootte in op 150% van de grootte van de parent */
+    margin-bottom: 1.5em; /* Voegt onderaan marge toe gelijk aan 1.5 keer de font-grootte van de parent */
+}
+
+/* Header
+
+Maak gebruik van een Image element met een hoogte van 50px. Onderaan zet je een grijze(#ebe8e8)
+volle lijn van 1px en dit over de volledige breedte van de pagina.
+
+Het volledige header blok is horizontaal gecentreerd. Op klein scherm moet het blok 600px breed
+zijn, vanaf 770px viewport breedte moet het blok 750px breed zijn en vanaf 1000px viewport breedte
+maak je het 980px breed. */
+
+/* Onderaan zet je een grijze(#ebe8e8)
+volle lijn van 1px en dit over de volledige breedte van de pagina. */
+
+
+/* Logo-container met grijze lijn */
+.logo-container {
+    border-bottom: 1px solid #ebe8e8; /* Grijze lijn */
+    margin-bottom: 10px; /* Ruimte tussen logo en navigatie */
+}
+
+/* Maak het logo 50px hoog */
+.logo {
+    height: 50px;
+    display: inline-block;
+}
+
+/*Op klein scherm moet het blok 600px breed
+zijn,*/
+
+@media (max-width: 600px) {
+    header {
+        width: 600px;
+        margin: 0 auto; /*Het volledige header blok is horizontaal gecentreerd.*/
+    }
+}
+/*vanaf 770px viewport breedte moet het blok 750px breed zijn*/
+
+@media (min-width: 770px) and (max-width: 999px) {
+    header {
+        width: 750px;
+        margin: 0 auto; /*Het volledige header blok is horizontaal gecentreerd.*/
+    }
+}
+/* vanaf 1000px viewport breedte
+maak je het 980px breed. */
+
+@media (min-width: 1000px) {
+    header {
+        width: 980px;
+        margin: 0 auto; /*Het volledige header blok is horizontaal gecentreerd.*/
+    }
+}
+
+/*Navigatie
+
+Gebruik een standaard opsomming om dit menu te bouwen. Verdeel de ruimte in 7 gelijke delen met
+een Grid. Bovenaan en onderaan plaats je 10px padding.
+Het volledige navigatie blok is horizontaal gecentreerd. Op klein scherm moet het blok 600px breed
+zijn, vanaf 770px viewport breedte moet het blok 750px breed zijn en vanaf 1000px viewport breedte
+maak je het 980px breed.
+
+Navigatie Knop
+
+De knop is een hyperlink waarvan de tekst horizontaal is gecentreerd met bovenaan en onderaan
+een padding van 10px. Rechts komt een grijze(#ebe8e8) volle lijn van 1px, behalve na het laatste
+item. De tekst moet uppercase zijn, niet onderlijnd, met kleur #5b4746 en met grootte 13px. Merk
+op dat er boven en onder de grijze verticale lijn witruimte is.
+Wanneer de muis over een menu item gaat, moet onderaan het item een volle lijn van 2px
+verschijnen met kleur #fff100. Zorg ervoor dat daardoor de content niet verschuift.*/
+
+nav {
+    display: flex;
+    justify-content: center; /* Horizontaal centreren */
+    padding: 10px 0; /* Bovenaan en onderaan 10px padding */
+
+}
+
+nav ul {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr); /* Verdeel in 7 gelijke delen */
+    list-style-type: none; /* Verwijder standaard opsommingstekens */
+    padding: 0; /* Verwijder standaard padding */
+    margin: 0; /* Verwijder standaard margin */
+    width: 100%; /* Zorg ervoor dat de ul de volledige breedte gebruikt */
+    max-width: 980px; /* Max breedte voor grote schermen */
+}
+
+nav ul li {
+    text-align: center; /* Centreer de tekst in de lijstitems */
+    position: relative; /* Voor de onderlijn bij hover */
+}
+
+nav ul a {
+    display: block; /* Maak de link een blok-element */
+    padding: 10px 0; /* Bovenaan en onderaan 10px padding */
+    text-decoration: none; /* Verwijder onderstreping van links */
+    color: #5b4746; /* Kleur van de tekst */
+    font-size: 13px; /* Tekstgrootte */
+    text-transform: uppercase; /* Maak tekst uppercase */
+    border-right: 1px solid #ebe8e8; /* Grijze lijn aan de rechterkant */
+    border-bottom: 2px solid transparent; /* Reserveer ruimte voor de onderlijn */
+}
+nav ul li:last-child a {
+    border-right: none; /* Verwijder de lijn na het laatste item */
+}
+
+nav ul a:hover {
+    border-bottom: 2px solid #fff100; /* Onderlijn bij hover */
+}
+
+/* Media queries voor responsieve breedtes */
+@media (max-width: 600px) {
+    nav ul {
+        width: 600px; /* Breedte voor kleine schermen */
+    }
+}
+
+@media (min-width: 770px) {
+    nav ul {
+        width: 750px; /* Breedte voor schermen vanaf 770px */
+    }
+}
+
+@media (min-width: 1000px) {
+    nav ul {
+        width: 980px; /* Breedte voor schermen vanaf 1000px */
+    }
+}
+
+/* Main
+Bovenaan het blok, net boven de header afbeelding komt een grijze(#ebe8e8) volle lijn van 1px en dit
+over de volledige breedte van de pagina.
+Main Header
+
+De header neemt de volledige breedte van de viewport en toont een afbeelding. Deze header heeft
+een vaste hoogte van 500px.
+
+De titel is een witte tekst met grootte 40px, horizontaal en verticaal gecentreerd boven de image
+met een schaduw kleur #8D99AE met 2px horizontale en verticale afstand.
+
+Wanneer de viewport breder wordt dan 800px, wordt de tekst grootte 5em. Uiteraard blijft de tekst
+verticaal gecentreerd */
+
+/* Grijze lijn boven de main header */
+main {
+    border-top: 1px solid #ebe8e8; /* Grijze lijn bovenaan */
+}
+
+/* Grijze lijn boven de main header */
+main {
+    border-top: 1px solid #ebe8e8; /* Grijze lijn bovenaan */
+}
+
+/* Main header styling */
+.main-header {
+    position: relative; /* Voor het centreren van de tekst */
+    height: 500px; /* Vaste hoogte van de header */
+    background-image: url('../images/headerimage.jpg'); /* Voeg de afbeelding toe */
+    background-size: cover; /* Zorg ervoor dat de afbeelding de hele ruimte bedekt */
+    background-position: center; /* Centreer de afbeelding */
+    display: flex; /* Gebruik flexbox voor centreren */
+    justify-content: center; /* Horizontaal centreren */
+    align-items: center; /* Verticaal centreren */
+}
+
+.main-header h1 {
+    color: white; /* Witte tekstkleur */
+    font-size: 40px; /* Standaard tekstgrootte */
+    text-shadow: 2px 2px #8D99AE; /* Schaduw voor de tekst */
+    text-align: center; /* Centreer de tekst */
+    border-bottom: none; /* Verwijder de lijn alleen hier */
+}
+
+/* Verander de tekstgrootte bij grotere schermen */
+@media (min-width: 800px) {
+    .main-header h1 {
+        font-size: 5em; /* Grotere tekstgrootte */
+    }
+}
+/*Main Recipes
+Stel een marge boven het blok in van 50px.
+
+Gebruik Grid om afbeeldingen en artikels naast elkaar te zetten met een tussenruimte van 15px
+
+De titel "Recipes" maakt gebruik van een H1.
+
+Het volledige recipes blok is horizontaal gecentreerd. Op klein scherm moet het blok 600px breed
+zijn, vanaf 770px viewport breedte moet het blok 750px breed zijn en vanaf 1000px viewport breedte
+maak je het 980px breed.
+ */
+.recipes-grid {
+    display: flex;
+    flex-direction: column; /* Items onder elkaar */
+    gap: 15px; /* Tussenruimte tussen items */
+    margin: auto;
+    max-width: 980px;
+    padding: 15px;
+}
+
+.recipe-item {
+    display: flex; /* Flexbox voor tekst en afbeelding */
+    justify-content: flex-start; /* Zorg ervoor dat de items aan de linkerkant beginnen */
+    align-items: flex-start; /* Tekst bovenaan uitlijnen */
+    margin: auto;
+    max-width: 900px;
+    gap: 15px; /* Ruimte tussen tekst en afbeelding */
+    border-top: 1px solid #ddd; /* Grijze lijn bovenaan elk recept */
+    padding-top: 15px; /* Ruimte boven de inhoud van het recept */
+}
+
+/* Tekstkolom */
+.recipe-content {
+    display: flex;
+    flex-direction: column; /* Zorg dat de tekst onder elkaar staat */
+    gap: 8px; /* Ruimte tussen tekstregels */
+    flex: 1; /* Tekstkolom neemt beschikbare ruimte in */
+}
+
+/* Afbeelding */
+.recipe-item img {
+    max-width: 200px; /* Beperk de breedte van de afbeelding */
+    height: auto; /* Behoud aspect ratio */
+    flex-shrink: 0; /* Zorg ervoor dat de afbeelding niet krimpt */
+}
+
+/* Responsiviteit */
+@media (max-width: 1000px) {
+    .recipes-grid {
+        max-width: 750px;
+    }
+}
+
+@media (max-width: 770px) {
+    .recipe-item {
+        flex-direction: column; /* Tekst en afbeelding onder elkaar op kleine schermen */
+        text-align: center; /* Centreer tekst */
+    }
+
+    .recipe-item img {
+        margin: 15px 0 0 0; /* Ruimte boven afbeelding als deze onder de tekst komt */
+    }
+}
+/*
+Main Recipe Item
+Het artikel heeft een rechter margin van 150% van de font size van zijn parent met een bovenste
+padding van 100% van de font size van de parent.
+
+Bovenaan is een grijze(#ddd) volle lijn van 1px.
+
+Main Recipe Item Small Title (kicker)
+Dit gaat over alle titels zoals "Kitchn Love Letters".
+De tekst is uppercase, 1.2em met 1px plaats tussen de letters en een rode tekst kleur (#ff4d56).
+
+Main Recipe Item Title
+Dit gaat over titels zoals "This One‐Pan Mushroom and Steak Recipe Is Calling Your Name"
+De titel is een H2 hyperlink, niet onderlijnd en kleur zwart.
+
+Main Recipe Item Body
+Dit gaat over tekst zoals "Raise your hand if you're making this for dinner tonight!"
+De tekst kleur donkergrijs (#666) met lijnhoogte 2
+
+Main Recipe Item Auteur
+Dit gaat over tekst zoals "by Elizabeth Licata"
+Voorzie een rechter padding 10px, een volle lijn rechts van 1px met kleur #ebe8e8 en zet de tekst
+schuin.
+
+Main Recipe Item Timestamp
+Gebruik een donkergrijze (#666) tekst kleur en voorzie een linker padding van 10px
+De auteur van het artikel en de timestamp staan naast elkaar.
+
+Main Recipe Afbeelding
+Gebruik hier de gegeven class respimg uit het style.css bestand.*/
+
+/* Main Recipe Item */
+
+
+
+
+/* Main Recipe Item Small Title (kicker) */
+.kicker {
+    text-transform: uppercase; /* Maak tekst uppercase */
+    font-size: 1.2em; /* Tekstgrootte */
+    letter-spacing: 1px; /* Plaats tussen de letters */
+    color: #ff4d56; /* Rode tekstkleur */
+}
+
+/* Main Recipe Item Title */
+.recipe-title {
+    text-decoration: none; /* Geen onderlijning */
+    color: black; /* Zwarte kleur */
+}
+
+/* Main Recipe Item Body */
+.recipe-body {
+    color: #666; /* Donkergrijze tekstkleur */
+    line-height: 2; /* Lijnhoogte */
+}
+
+/* Main Recipe Item Auteur */
+.recipe-author {
+    padding-right: 10px; /* Rechter padding van 10px */
+    border-right: 1px solid #ebe8e8; /* Volle lijn rechts van 1px */
+    font-style: italic; /* Zet de tekst schuin */
+    display: inline; /* Zorg ervoor dat het inline is met de timestamp */
+}
+
+/* Main Recipe Item Timestamp */
+.recipe-timestamp {
+    color: #666; /* Donkergrijze tekstkleur */
+    padding-left: 10px; /* Linker padding van 10px */
+    display: inline; /* Zorg ervoor dat het inline is met de auteur */
+}
+/*Main Recommended
+Stel een marge boven het blok in van 50px.
+
+Het volledige recommended blok is horizontaal gecentreerd. Op klein scherm moet het blok 600px
+breed zijn, vanaf 770px viewport breedte moet het blok 750px breed zijn en vanaf 1000px viewport
+breedte maak je het 980px breed.
+
+Main Recommended titel
+Gebruik H1 element.
+
+Main Recommended lijst
+Gebruik Bootstrap kolommen om de foto’s uit te lijnen. Op grote schermgrootte moeten er 3 naast
+elkaar staan, op medium schermgrootte moeten er 2 afbeeldingen naast elkaar staan en op kleine
+schermgrootte moeten ze de volledige beschikbare breedte innemen.
+
+Zorg er voor dat er onder iedere foto een witruimte is van 25px*/
+
+.recommended-section{
+    margin-top: 50px;
+    text-align: center;
+}
+/* Main Recommended */
+.recommended-section {
+    margin-top: 50px; /* Marge boven het blok */
+    text-align: center; /* Horizontaal centreren van de titel */
+}
+
+/* Responsieve breedte voor de sectie */
+@media (max-width: 600px) {
+    .recommended-section {
+        width: 600px; /* Breedte voor kleine schermen */
+        margin: 0 auto; /* Horizontaal centreren */
+    }
+}
+
+@media (min-width: 770px) {
+    .recommended-section {
+        width: 750px; /* Breedte voor schermen vanaf 770px */
+        margin: 0 auto; /* Horizontaal centreren */
+    }
+}
+
+@media (min-width: 1000px) {
+    .recommended-section {
+        width: 980px; /* Breedte voor schermen vanaf 1000px */
+        margin: 0 auto; /* Horizontaal centreren */
+    }
+}
+/* Zorg ervoor dat er onder iedere foto een witruimte is van 25px */
+.recommended-section .respimg {
+    margin-bottom: 25px; /* Witruimte onder de afbeelding, alleen in de recommended sectie */
+}
+
+/*Footer
+
+De twee blokken plaats je naast elkaar met float, waarbij het linkerblok rechts uitgelijnd is en het
+rechterblok links uitgelijnd is.
+
+Vervang de tekst (copyright) door het html copyright teken.
+
+Het volledige footer blok neemt volledige breedte van de viewport in, waarbij beide blokken exact de
+helft van de ruimte nemen.
+
+Bovenaan is er een volle rand van 1px met kleur #ebe8e8.
+
+Voorzie 20px afstand tussen de tekst en de rand van de footer. De tekst krijgt een lijnhoogte van
+2em.*/
+
+footer {
+    width: 100%; /* Zorgt ervoor dat de footer de volledige breedte van de pagina beslaat */
+    border-top: 1px solid #ebe8e8; /* Voegt een bovenrand toe aan de footer met een lichte kleur */
+    padding: 20px; /* Voegt ruimte toe binnen de footer rondom de inhoud */
+    box-sizing: border-box; /* Zorgt ervoor dat padding en border worden meegerekend in de totale breedte en hoogte */
+    overflow: hidden; /* Zorgt ervoor dat float-elementen binnen de footer blijven */
+}
+
+#left {
+    float: left; /* Laat dit element naar links zweven */
+    width: 50%; /* Dit element neemt 50% van de breedte van de footer in beslag */
+    text-align: right; /* Tekst in dit element wordt rechts uitgelijnd */
+    line-height: 2em; /* Verhoogt de regelhoogte voor betere leesbaarheid */
+    padding-right: 10px; /* Zodat het niet direct tegen de rand staat */
+}
+
+#right {
+    float: right; /* Laat dit element naar rechts zweven */
+    width: 50%; /* Dit element neemt 50% van de breedte van de footer in beslag */
+    text-align: left; /* Tekst in dit element wordt links uitgelijnd */
+    line-height: 2em; /* Verhoogt de regelhoogte voor betere leesbaarheid */
+    padding-left: 10px; /* Zodat het niet direct tegen de rand staat */
+    background: black; /* Stelt de achtergrondkleur in op zwart */
+    color: white; /* Stelt de tekstkleur in op wit */
+}
